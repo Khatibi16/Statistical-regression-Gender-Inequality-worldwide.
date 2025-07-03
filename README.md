@@ -2,7 +2,11 @@
 
 # Gender Inequality and Its Determinants – A Regression Analysis
 
-This project investigates the structural factors contributing to gender inequality across different countries using multivariate regression analysis. The target variable is the Gender Inequality Index (GII), a UN-derived measure ranging from 0 to 1, where higher values indicate greater inequality. The study draws from publicly available datasets covering a range of social, economic, and political indicators. These include literacy rates, poverty levels, democracy scores, healthcare coverage, the presence of a state religion, conflict levels via the Global Peace Index (GPI), and the prevalence of child marriage. All data was compiled and standardized to represent conditions around the year 2021 for 138 countries.
+This project investigates the structural factors contributing to gender inequality across different countries using multivariate regression analysis. The target variable is the Gender Inequality Index (GII), a UN-derived measure ranging from 0 to 1, where higher values indicate greater inequality. The study draws from publicly available datasets covering a range of social, economic, and political indicators. 
+
+An original dataset was prepared while referring to different international government and UN datasets. 
+
+These include literacy rates, poverty levels, democracy scores, healthcare coverage, the presence of a state religion, conflict levels via the Global Peace Index (GPI), and the prevalence of child marriage. All data was compiled and standardized to represent conditions around the year 2021 for 138 countries.
 
 The analysis began with visual exploration through scatter plots, revealing that poverty, political instability, religion, and child marriage tend to correlate positively with GII, while higher literacy, stronger democracy, and better health coverage associate with lower inequality. A full multivariate regression model including all variables achieved a high adjusted R² of 0.8636, indicating that about 86% of the variation in gender inequality can be explained by the selected features. To improve model interpretability without losing explanatory power, model selection techniques were applied. Both step-up and step-down procedures yielded a simpler model with three core predictors: healthcare access (uhssci), political instability (gpi), and child marriage rate (chmarriage). All three variables were statistically significant and aligned with the theoretical expectations of how structural and cultural factors affect gender disparities.
 
